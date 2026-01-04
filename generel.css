@@ -13,7 +13,6 @@ header {
   align-items: center;
   padding: 20px;
   background-color: #ffffff;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
@@ -78,7 +77,6 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-/* dropdown styling */
 .work-dropdown {
   position: relative;
 }
@@ -90,6 +88,13 @@ summary::-webkit-details-marker {
 .work-menu a {
   font-weight: normal;
   font-size: 16px;
+}
+
+/* hero imgs styling */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* media query for skærme på 800px eller mindre */
