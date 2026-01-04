@@ -1,0 +1,100 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HERO – MOBIL FIRST */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  width: 100%;
+}
+
+/* HERO IMAGE */
+.hero_section1 {
+  width: 100%;
+  max-width: 1200px; /* eller 1200px */
+  display: block;
+}
+
+/* SOCIALS – mobil (vandret) */
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+/* SOCIAL LINKS */
+.socials a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+/* TITLE SECTION */
+.title-section {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+/* PROJECTS GRID */
+.projects {
+  display: grid;
+  /* gap: 60px;
+  padding: 60px 20px;*/
+}
+
+.projects a {
+  display: block;
+}
+
+.projects img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* media query for skærme på 800px eller mindre */
+@media screen and (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .socials {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* media query for skærme på 801px eller større */
+@media (min-width: 801px) {
+  .hero {
+    grid-template-columns: 1fr auto;
+    min-height: 80vh;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .hero_section1 {
+    margin-left: 5px;
+  }
+
+  .socials {
+    flex-direction: column;
+    margin-top: 31.7px;
+  }
+}
