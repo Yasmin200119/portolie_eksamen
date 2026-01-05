@@ -28,7 +28,15 @@
 /* SOCIALS – mobil (vandret) */
 .socials {
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socials img {
+  width: 30px;
+  height: 30px;
+  align-self: center;
 }
 
 /* SOCIAL LINKS */
@@ -65,6 +73,7 @@ h1 {
   height: auto;
   display: block;
 }
+
 /* media query for skærme på 800px eller mindre */
 @media screen and (max-width: 800px) {
   .hero {
@@ -74,27 +83,17 @@ h1 {
     gap: 15px;
   }
 
-  .socials {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
+  /* media query for skærme på 801px eller større */
+  @media (min-width: 801px) {
+    .hero {
+      grid-template-columns: 1fr auto;
+      min-height: 80vh;
+      padding: 20px;
+      gap: 20px;
+    }
 
-/* media query for skærme på 801px eller større */
-@media (min-width: 801px) {
-  .hero {
-    grid-template-columns: 1fr auto;
-    min-height: 80vh;
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .hero_section1 {
-    margin-left: 5px;
-  }
-
-  .socials {
-    flex-direction: column;
-    margin-top: 31.7px;
+    .hero_section1 {
+      margin-left: 5px;
+    }
   }
 }
