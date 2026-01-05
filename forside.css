@@ -21,7 +21,7 @@
 /* HERO IMAGE */
 .hero_section1 {
   width: 100%;
-  max-width: 1200px; /* eller 1200px */
+  max-width: 1200px;
   display: block;
 }
 
@@ -31,19 +31,6 @@
   gap: 25px;
   flex-direction: row;
   justify-content: center;
-}
-
-.socials img {
-  width: 30px;
-  height: 30px;
-  align-self: center;
-}
-
-/* SOCIAL LINKS */
-.socials a {
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
 }
 
 /* TITLE SECTION */

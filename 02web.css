@@ -1,0 +1,40 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero_section2 {
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-section h1,
+.title-section h2 {
+  font-size: 32px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.content-section h1,
+.content-section h2,
+.content-section h3,
+.content-section p {
+  margin: 15px;
+  padding: 1px;
+}
+
+ul {
+  margin: 20px;
+  padding-left: 40px;
+}
+
+/* media query for skærme på 801px eller større */
+@media (min-width: 801px) {
+}
