@@ -147,7 +147,7 @@ img {
 .footer p,
 .footer a {
   font-family: var(--primary-font);
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
   color: var(--primary-color);
   text-decoration: none;
@@ -238,5 +238,14 @@ img {
   .mail-link:hover {
     color: #ffd000;
     text-decoration: underline;
+  }
+
+  .footer p,
+  .footer a {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
   }
 }
