@@ -74,6 +74,7 @@ li {
   margin-bottom: 10px;
   font-family: var(--primary-font);
   font-size: var(--font-size-text);
+  color: var(--text-light);
 }
 
 .title-section {
@@ -173,7 +174,7 @@ li {
     margin: 20px;
 
     display: grid;
-    grid-template-columns: 1fr; /* 👈 ÉN kolonne */
+    grid-template-columns: 1fr;
     gap: 40px;
 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18), 0 10px 23px rgba(0, 0, 0, 0.22);
