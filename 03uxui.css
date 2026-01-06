@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.hero_section2 {
+.hero_section3 {
   width: 100%;
   height: auto;
   display: block;
@@ -50,7 +50,7 @@ img {
   font-size: var(--font-size-h3);
 }
 
-.content-secrtion img {
+.content-section img {
   max-width: 100%;
   height: auto;
   display: block;
