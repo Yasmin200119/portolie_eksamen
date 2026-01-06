@@ -1,0 +1,124 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero_section5 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-section h1,
+.title-section h2 {
+  font-size: 32px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.title-section h1 {
+  margin-top: 20px;
+  font-family: var(--primary-font);
+}
+
+.title-section h2 {
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-subtitle);
+  font-style: italic;
+  font-weight: normal;
+}
+
+.content-section h3,
+.content-section p {
+  font-family: var(--primary-font);
+  font-weight: normal;
+  margin: 15px;
+  padding: 1px;
+}
+
+.content-section h3 {
+  font-weight: bold;
+}
+
+.content-section h3 {
+  font-size: var(--font-size-h3);
+}
+
+.content-secrtion img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  padding-left: 40px;
+}
+
+ul p {
+  font-family: var(--primary-font);
+  color: var(--text-light);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-family: var(--primary-font);
+  font-size: var(--font-size-text);
+  color: var(--text-light);
+}
+
+.title-section {
+  text-align: center;
+}
+
+.content-row {
+  background-color: #10190f;
+  border: 1px solid #10190f;
+  padding: 20px;
+  margin-bottom: 80px;
+  margin: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18), 0 10px 23px rgba(0, 0, 0, 0.22);
+}
+
+.content-row h3 {
+  color: var(--accent);
+}
+
+.content-row p {
+  color: var(--text-light);
+}
+
+.content-cta {
+  background-color: #ffffff;
+  color: #222;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 3px;
+}
+
+/* media query for skærme på 801px eller større */
+@media (min-width: 801px) {
+  .content-row {
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+}

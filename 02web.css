@@ -62,18 +62,11 @@ ul {
   padding-left: 40px;
 }
 
-ul p {
-  font-family: var(--primary-font);
-  color: var(--text-light);
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
 li {
   margin-bottom: 10px;
   font-family: var(--primary-font);
   font-size: var(--font-size-text);
+  color: var(--text-light);
 }
 
 .title-section {
@@ -81,15 +74,17 @@ li {
 }
 
 .content-row {
-  background-color: #081843;
-  border: 1px solid #ddd;
+  background-color: #27300f;
+  border: 1px solid #27300f;
   padding: 20px;
   margin-bottom: 80px;
   margin: 20px;
 
   display: grid;
-  grid-template-columns: 1fr; /* 👈 ÉN kolonne */
+  grid-template-columns: 1fr;
   gap: 40px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18), 0 10px 23px rgba(0, 0, 0, 0.22);
 }
 
 .content-row h3 {
@@ -98,6 +93,20 @@ li {
 
 .content-row p {
   color: var(--text-light);
+  line-height: 1.8;
+}
+
+.content-cta {
+  background-color: var(--accent);
+  color: var(--primary-color);
+  border: 2px solid var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px;
+  margin-left: 80px;
+}
+.content-cta span {
+  padding: 3px;
 }
 
 /* media query for skærme på 801px eller større */
@@ -108,6 +117,11 @@ li {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
-    box-shadow: 3px 30px 35px rgba(0, 0, 0, 0.2);
+  }
+
+  .content-cta :hover {
+    border: 2px solid #081843;
+
+    transition: 0.3s;
   }
 }
