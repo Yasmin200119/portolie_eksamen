@@ -29,17 +29,14 @@
 
 /* TITLE SECTION */
 .title-section {
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-title);
+  margin-bottom: 5px;
   text-align: center;
   margin-bottom: 10px;
 }
 
-h1 {
-  font-size: 32px;
-  margin-bottom: 5px;
-}
-
 /* PROJECTS GRID */
-
 .projects a {
   display: block;
 }

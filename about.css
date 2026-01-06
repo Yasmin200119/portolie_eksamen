@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.hero_section {
+.hero_section6 {
   width: 100%;
   height: auto;
   display: block;
@@ -16,19 +16,50 @@ img {
   height: auto;
 }
 
-.video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.title-section {
+/* TITLE SECTION */
+/* h1 og h2 styling */
+.title-section h1,
+.title-section h2 {
+  font-size: 32px;
+  margin-bottom: 5px;
+  margin-left: 5px;
   text-align: center;
 }
 
+.title-section h1 {
+  margin-top: 20px;
+  font-family: var(--secondary-font);
+}
+
+.title-section h2 {
+  font-family: var(--primary-font);
+  font-size: var(--font-size-subtitle);
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* CONTENT ROW SECTION */
+/* h3 styling */
+.content-section h3 {
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-h3);
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* p styling */
+.content-row p {
+  font-family: var(--primary-font);
+  font-size: var(--size-text);
+  color: var(--text-light);
+  line-height: var(--line-height);
+  max-width: var(--line-size);
+  margin-bottom: 10px;
+}
+
 .content-row {
-  background-color: #10190f;
-  border: 1px solid #10190f;
+  background-color: #311f1c;
+  border: 1px solid #311f1c;
   padding: 20px;
   margin-bottom: 80px;
   margin: 20px;
@@ -44,13 +75,31 @@ img {
   color: var(--accent);
 }
 
+.content-row p {
+  font-size: var(--size-text);
+  color: var(--text-light);
+  line-height: var(--line-height);
+  max-width: var(--line-size);
+}
+
+.content-image {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 #knap {
-  padding: 12px 20px;
-  font-size: 16px;
+  padding: 4px 10px;
+  font-size: 10px;
   font-weight: 600;
   border: none;
   background: rgba(0, 0, 0, 0.7);
   color: white;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
 
   cursor: pointer;
 
@@ -58,11 +107,29 @@ img {
   transform: 0.15s ease;
 }
 
+#video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.video-grid {
+  max-width: 1100px; /* justér: 1000–1200px */
+  margin: 60px auto; /* centrerer og giver luft */
+  padding: 0 20px; /* luft på små skærme */
+}
+
 @media (min-width: 801px) {
+  .content-row {
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
   #knap:hover {
     background: rgb(255, 217, 0);
     color: black;
-    transform: scale(1.05);
   }
 
   #knap:active {
