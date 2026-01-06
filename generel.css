@@ -11,14 +11,17 @@
   --base-color: #eee7e7;
   --text-light: #ffffff;
 
-  --primary-font: helvetica, arial, sans-serif;
-  --secondary-font: "Times New Roman", serif;
+  --primary-font: "Times New Roman", serif;
+  --secondary-font: helvetica, arial, sans-serif;
 
   --font-size-title: 32px;
-  --font-size-subtitle: 18px;
-  --font-size-h3: 16px;
+  --font-size-subtitle: 20px;
+  --font-size-h3: 25px;
   --font-size-text: 12px;
   --font-size-img: 10px;
+
+  --line-size: 400px;
+  --line-height: 1.6;
 }
 
 body {
@@ -64,6 +67,7 @@ nav {
 .menupunkt {
   display: block;
   padding: 10px;
+  font-family: var(--primary-font);
   color: var(--primary-color);
   font-size: 20px;
   font-weight: bold;
@@ -118,17 +122,17 @@ summary::-webkit-details-marker {
 }
 
 .title-section h1 {
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: var(--font-size-title);
   color: var(--primary-color);
   margin-bottom: 10px;
 }
 
 .title-section h2 {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   font-style: italic;
   font-size: 24px;
-  color: var(--primary-color);
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
@@ -253,6 +257,7 @@ summary::-webkit-details-marker {
 
   .work-menu a:hover,
   .menupunkt:hover,
+  .projects,
   footer a:hover,
   footer p:hover {
     color: #ffd000;
